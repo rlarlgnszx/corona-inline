@@ -3,6 +3,7 @@ package server.sopt.coronainline.constant;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.web.client.HttpStatusCodeException;
 
 import java.util.Arrays;
 import java.util.Optional;

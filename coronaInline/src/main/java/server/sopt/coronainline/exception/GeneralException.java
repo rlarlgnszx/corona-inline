@@ -5,7 +5,6 @@ import server.sopt.coronainline.constant.ErrorCode;
 
 @Getter
 public class GeneralException extends RuntimeException {
-
     private final ErrorCode errorCode;
 
     public GeneralException() {

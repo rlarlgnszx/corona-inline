@@ -6,16 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class BaseController implements ErrorController {
+public class BaseController {
     @GetMapping("/")
-    public String root(){
+    public String root() throws  Exception{
         //index.html을 찾을수없어 노란줄
-        return "index";
+        throw new Exception("테스트 ");
+//        return "index";
     }
 
-    @RequestMapping("error")
-    public String error(){
-        //index.html을 찾을수없어 노란줄
-        return "error";
-    }
+
 }

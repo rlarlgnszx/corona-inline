@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-It is error page.
+<p> This is  : <!--/*@thymesVar id="_" type=""*/-->
+    <span th:text="${statusCode} ?: _">???</span> Error Page </p>
+<ul>
+    <li>
+        ErrorCode : <!--/*@thymesVar id="_" type=""*/-->
+        <span th:text="${errorCode} ?: _">???</span>
+    </li>
+    <li>
+        Message : <!--/*@thymesVar id="_" type=""*/-->
+        <span th:text="${message} ?: _">???</span>
+    </li>
+</ul>
 </body>
 </html>
