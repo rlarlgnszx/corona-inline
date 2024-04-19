@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,4 +7,20 @@
 <body>
 It is place page.
 </body>
+<ul>
+    <li>
+        placeType : <!--/*@thymesVar id="_" type=""*/-->
+        <span th:text="${placeType} ?: _">?</span>
+    </li>
+    <li>
+        placeName :
+        <!--/*@thymesVar id="_" type=""*/-->
+        <span th:text="${placeName} ?: _">?</span>
+    </li>
+    <li>
+        address :
+        <!--/*@thymesVar id="_" type=""*/-->
+        <span th:text="${address} ?: _">?</span>
+    </li>
+</ul>
 </html>
